@@ -1,0 +1,7 @@
+import { CostCalculator } from "@/components/cost-calculator";
+import { PageIntro } from "@/components/page-intro";
+import { SiteShell } from "@/components/site-shell";
+
+export default function TreatmentCostPage() {
+  return <SiteShell><PageIntro eyebrow="AI treatment cost" title="Plan treatment with clarity, not surprises." description="Select a hospital, treatment and insurance plan to generate an AI-assisted estimate, detailed breakdown and expected patient payment." /><div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12 pb-20"><CostCalculator /><section className="grid grid-cols-1 md:grid-cols-3 gap-5"><div className="glass-card rounded-3xl p-6 border border-slate-200/80 dark:border-slate-800"><h3 className="font-bold">Hospital comparison</h3><p className="mt-2 text-sm text-slate-500">Compare treatment estimates against selected hospital and room preferences.</p></div><div className="glass-card rounded-3xl p-6 border border-slate-200/80 dark:border-slate-800"><h3 className="font-bold">Expense insights</h3><p className="mt-2 text-sm text-slate-500">Understand room, procedure, medicines and support costs before admission.</p></div><div className="glass-card rounded-3xl p-6 border border-slate-200/80 dark:border-slate-800"><h3 className="font-bold">Insurance-aware planning</h3><p className="mt-2 text-sm text-slate-500">See the estimated patient share alongside insurance coverage.</p></div></section></div></SiteShell>;
+}
